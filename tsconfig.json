@@ -1,26 +1,34 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "module": "esnext",
     "target": "es5",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "es2018",
+      "dom"
     ],
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "noEmit": true,
+    "declaration": true,
+    "esModuleInterop": false,
+    "noResolve": false,
+    "noImplicitAny": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src"
+    "./src/**/*"
+  ],
+  "exclude": [
+    "src/pages/_Invoicing"
   ]
 }
