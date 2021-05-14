@@ -67,6 +67,7 @@ export const Tracks = styled.div`
     font-weight: bold;
     padding: 32px 0 16px 0;
   }
+
   table {
     width: 100%;
   }
@@ -83,10 +84,13 @@ export const Tracks = styled.div`
         justify-content: center;
 
         &:first-child {
+          width: 100%;
           justify-content: flex-start;
+          max-width: 440px;
         }
         &:last-child {
           justify-content: flex-end;
+          width: 54px;
         }
       }
     }
@@ -113,11 +117,14 @@ export const Tracks = styled.div`
         justify-content: center;
 
         &:first-child {
+          width: 100%;
           justify-content: flex-start;
+          max-width: 440px;
         }
         &:last-child {
           justify-content: flex-end;
-          padding-right: 10px;
+          padding-right: 6px;
+          width: 54px;
         }
         a {
           display: flex;

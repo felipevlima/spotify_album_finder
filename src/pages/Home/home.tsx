@@ -13,6 +13,7 @@ const Home = () => {
 
   return (
     <Container>
+      <h1>Busque por seus albums preferidos</h1>
       <Search responseData={handleGetApi} />
       <table>
         <thead>
